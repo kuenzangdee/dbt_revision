@@ -42,7 +42,10 @@ models:
       +materialized: table
     #applies to all files under models/staging
     staging:
-      +materialized: view
+      jaffle_shop:
+        +materialized: view
+      stripe:
+        +materialized: view
     
     #applies to all files under models/marts
     marts:
