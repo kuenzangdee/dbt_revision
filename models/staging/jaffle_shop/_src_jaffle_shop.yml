@@ -11,12 +11,26 @@ sources:
          # count: 5
           #period: day
         #loaded_at_field: _etl_loaded_at
+    
     tables:
       - name: orders
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+              
         
       - name: customers
         #config:
           #freshness: null
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+              
+
         
 
   
