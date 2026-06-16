@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_stripe__payment
+    description: payment records from stripe, with one row per payment transaction.
+    columns:
+      - name: payment_id
+        description: unique identifier for the payment transaction.
+      - name: order_id
+        description: identifier for the order the payment was applied to.
+      - name: payment_method
+        description: method used to submit the payment.
+      - name: payment_status
+        description: current state of the payment transaction.
+      - name: payment_amount
+        description: amount of the payment in the transaction currency.
+      - name: payment_created
+        description: timestamp when the payment was created in stripe.
+      - name: _batched_at
+        description: timestamp when this record was ingested into the raw stripe dataset.
