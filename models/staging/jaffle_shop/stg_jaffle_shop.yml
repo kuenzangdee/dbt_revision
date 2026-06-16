@@ -9,6 +9,10 @@ models:
         data_tests:
           - not_null
           - unique
+      - name: first_name
+        description: customer's given name
+      - name: last_name
+        description: customer's family name
 
   - name: stg_jaffle_shop__orders
     description: One order per row
