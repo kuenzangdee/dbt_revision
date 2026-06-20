@@ -9,3 +9,13 @@ macros:
       - name: decimals
         type: integer
         description: The decimal point defaults to 2
+
+  - name: grant_select
+    description: "A macro that Grants select on target.schema to target.role unless specified "
+    arguments:
+      - name: schema
+        type: string
+        description: schema we want to grant privs, by default it is our target.schema
+      - name: role
+        type: string
+        description: Role we want to grant privs, by default it is our target.role
