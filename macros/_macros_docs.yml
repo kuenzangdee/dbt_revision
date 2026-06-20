@@ -1,0 +1,11 @@
+version: 2
+macros:
+  - name: cents_to_dollars
+    description: "Converts cents to dollars by dividing by 100"
+    arguments:
+      - name: column_name
+        type: string
+        description: "The column name containing the amount in cents"
+      - name: decimals
+        type: integer
+        description: The decimal point defaults to 2
