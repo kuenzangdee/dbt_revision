@@ -50,3 +50,6 @@ models:
     #applies to all files under models/marts
     marts:
       +materialized: table
+    #applies to snowflake spend under dbtpackages
+    snowflake_spend:
+      +enabled: true
